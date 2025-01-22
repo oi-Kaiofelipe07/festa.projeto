@@ -1,0 +1,61 @@
+@use'variable';
+
+.event {
+    padding: 80px 0;
+    
+    &--espaço{
+        background-image: linear-gradient(359deg, variable.$bluecolor, variable.$blackcolor);
+    }
+    
+    &--jogos{
+        background-image: linear-gradient(359deg, variable.$blue2color, variable.$bluecolor);
+    }
+
+    &--musicas{
+        background-image: linear-gradient(359deg, variable.$greencolor, variable.$blue2color);
+    }
+
+    &--image-left {
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+    
+    
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 360px;
+
+    }
+
+    &__detail {
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width:640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__detail {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -7,18 +7,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/main.scss">
+    
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/festa.png" alt="">
+            <img class="hero__logo" src="https://servidor-festa.vercel.app/festa.png" alt="">
             <p class="hero__text">
-                A maior festa começa em<br>
-                10d 12h 20m 35s
+                A maior festa começa em <br>
+                <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Espaço Vip - Centro - Barcelona
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Convites</b>
+                        1000 convidados - Checar Email
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Data</b>
+                        Sexta-feira, 17/12/2030 às 20:00Hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary"> 
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--espaço">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Espaço do Evento</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia et dicta excepturi, 
+                    aliquid commodi fugit rerum quibusdam cumque nemo soluta quae, deleniti quasi, ea facilis
+                    eum a accusantium aperiam quaerat!
+                </p>
+            </div>
+            <img class="event__image" src="https://servidor-festa.vercel.app/EspaçoEvento.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="event event--jogos event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Muita diversão</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia et dicta excepturi, 
+                    aliquid commodi fugit rerum quibusdam cumque nemo soluta quae, deleniti quasi, ea facilis
+                    eum a accusantium aperiam quaerat!
+                </p>
+            </div>
+            <img class="event__image" src="https://servidor-festa.vercel.app/jogos.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="event event--musicas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">A maior festa do ano</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia et dicta excepturi, 
+                    aliquid commodi fugit rerum quibusdam cumque nemo soluta quae, deleniti quasi, ea facilis
+                    eum a accusantium aperiam quaerat
+                </p>
+            </div>
+            <img class="event__image" src="https://servidor-festa.vercel.app/musica.jpg" alt="">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
